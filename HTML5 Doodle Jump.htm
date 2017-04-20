@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Doodle Jump</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <canvas id="canvas">
+    Your browser doesn't support HTML5!
+  </canvas>
+
+  <div id="mainMenu">
+    <h1>Doodle Jump</h1>
+    <h3>HTML5</h3>
+
+    <p class="info">
+      use
+      <span class="key left">?</span>
+      <span class="key right">?</span>
+      to move
+    </p>
+    <a class="button" onclick="init();">Play</a>
+  </div>
+
+  <div id="gameOverMenu">
+    <h1>game over!</h1>
+    <h3 id="go_score">you scored 0 points</h3>
+
+    <a class="button" onclick="reset();">Restart</a>
+    <a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+    <!--<a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>-->
+  </div>
+
+  <img src="img/doodlejump.jpg" style="width:1px;height:1px;">
+  <img id="sprite" src="img/doodlejump.png"/>
+
+  <div id="scoreBoard">
+    <p id="score">0</p>
+  </div>
+
+</div>
+
+<script src="js/doodlejump.js"></script>
+<script src="js/ga.js"></script>
+</body>
+</html>
